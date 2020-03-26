@@ -1,3 +1,227 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* ----------breakpoint naming ----------
+mobile - max-width: 450px
+tablet - max-width: 900px
+desktop - default: >900px
+---------- END breakpoint naming ---------- */
+
+
+/* ---------- global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Roboto', 'FontAwesome', sans-serif;
+}
+
+
+html {
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: rgb(40, 40, 40);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* ---------- END global ---------- */
+
+
+/* ---------- section ---------- */
+
+.Subscribe {
+    width: 100%;
+    height: fit-content;
+    padding: 75px;
+    background-color:#3a8bcd;
+}
+
+/* ---------- END section ---------- */
+
+/* ---------- container ---------- */
+
+.container {
+    width: 1150px;
+}
+
+.Subscribe--container {
+    width: 725px;
+    margin: auto auto;
+}
+
+
+/* ---------- END container ---------- */
+
+/* ---------- header - footer ---------- */
+
+header, footer {
+    width: 100%;
+    text-align: center;
+
+}
+.Header--top {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.Footer--top {
+    padding: 2rem 0;
+}
+
+.Header--logo, .Footer--logo {
+    height: 25px;
+}
+
+.Header--nav {
+    width: 450px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.Footer--nav {
+    width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.Header--navItem, .Footer--navItem {
+    margin: 0 1rem;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+
+.is-active {
+    color:#3a8bcd;
+}
+
+/* ---------- END header ---------- */
+
+/* ---------- headers ---------- */
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: 1rem 0 .5rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+    color: #3a8bcd;
+}
+
+.title-decoration {
+    width: 30px;
+    height: 5px;
+    background-color:#3a8bcd;
+    margin: 1rem 0;
+}
+
+.title-decoration-center {
+    width: 30px;
+    height: 5px;
+    margin: 1rem auto;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.color-white {
+    color: white;
+}
+
+/* ---------- END headers ---------- */
+
+/* ---------- paragraph ---------- */
+
+p {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+p .link {
+    color: #3a8bcd;
+    font-weight: bold;
+}
+
+/* ---------- END paragraph ---------- */
+
+
+/* ---------- button ---------- */
+
+.button {
+    width: fit-content;
+    height: fit-content;
+    background-color:#3a8bcd;
+    font-size: 0.9rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.button--white {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    font-size: 1.2rem;
+    color: #3a8bcd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+/* ---------- END button ---------- */
+
+/* ---------- form ---------- */
+
+input[type=text] {
+    width: 100%;
+    min-width: 60%;
+    background-color: #3a8bcd;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    margin: 0 1rem
+}
+
+/* ---------- END form ---------- */
+
+/* ---------- utilities ---------- */
+
+.u-flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.u-block {
+    display: block;
+    text-align: center;
+}
+
+.u-center {
+   text-align: center;
+}
+
+/* ---------- END utilities ---------- */
+
+

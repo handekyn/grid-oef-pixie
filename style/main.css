@@ -341,7 +341,7 @@ input#email::placeholder {
 }
 
 .u-spacer {
-    border: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     margin: 1rem auto;
 }
 

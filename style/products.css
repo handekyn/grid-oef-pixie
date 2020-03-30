@@ -1,0 +1,45 @@
+/* ---------- section ---------- */
+
+.Featured-items {
+    padding: 5rem 0;
+}
+
+.Featured-items--filters {
+    margin-top: 2.5rem;
+    justify-content: flex-end;
+}
+
+.Featured-items--filterItem {
+    font-size: 1.1rem;
+    color: rgb(40, 40, 40);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 0 0 2rem;
+}
+
+/* ---------- END section ---------- */
+
+/* ---------- container ---------- */
+
+.Banner--container, .Featured-items--container {
+    margin: 0 auto;
+}
+
+/* ---------- END container ---------- */
+
+/* ---------- page nav ---------- */
+
+.page-nav--button {
+	width: 35px;
+    height: 35px;
+    margin: 5px;
+	text-align: center;
+	line-height: 35px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	font-weight: 600;
+    border: 1px solid #eee;
+	text-decoration: none;
+}
+
+/* ---------- END page nav ---------- */

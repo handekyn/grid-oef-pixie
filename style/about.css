@@ -1,0 +1,39 @@
+/* ---------- section about ---------- */
+
+.About--info {
+    margin-bottom: 6rem;
+}
+
+.About--text {
+    padding-left: 2rem;
+}
+
+.About--findItem {
+    margin-left: 1rem;
+}
+
+.About--findItem .fa-facebook,
+.About--findItem .fa-twitter,
+.About--findItem .fa-linkedin {
+    background-color: rgb(180, 180, 180);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+/* ---------- END section about ---------- */
+
+/* ---------- header ---------- */
+
+.About--text h4 {
+    margin-top: 0;
+}
+
+.About--text p {
+    line-height: 1.75rem;
+}
+
+/* ---------- END header ---------- */

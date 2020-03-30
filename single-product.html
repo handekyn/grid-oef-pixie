@@ -3,49 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixie - Product</title>
+    <title>Pixie - Single Product</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/single-product.css">
 </head>
 <body>
-    <header>
-        <div class="Header--top">
+    <header class="u-center">
+        <div class="Header--top lg-col-full">
             <img class="Header--logo" src="images/header-logo.png" alt="pixie logo">
             <div class="Header--hamburger"></div>
         </div>
-        <div class="Header--nav">
-            <ul class="u-flex-space-between">
+        <div class="Header--nav lg-col-full">
+            <ul class="u-flex">
                 <li><a class="Header--navItem" href="index.html">HOME</a></li>
-                <li><a class="Header--navItem is-active" href="products.html">PRODUCTS</a></li>
+                <li><a class="Header--navItem  is-active" href="products.html">PRODUCTS</a></li>
                 <li><a class="Header--navItem" href="about.html">ABOUT US</a></li>
                 <li><a class="Header--navItem" href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
     </header>
 
+    <section class="Single-product">
+        <div class="Single-product--container con-1150px">
+            <div class="title-decoration"></div>
+            <h3>Single Product</h3>
+        </div>
+        <div class="Single-product--info lg-row u-flex">
+        <div class="con-1150px u-flex-left">
+            <div class="Single-product--image lg-col-half">
+                <img src="images/big-01.jpg" alt="big-01">
+                <div class=" u-flex">
+                    <img class="Single-product--image-thumb md-col-third" src="images/thumb-01.jpg" alt="thumb-01">
+                    <img class="Single-product--image-thumb md-col-third" src="images/thumb-02.jpg" alt="thumb-02">
+                    <img class="Single-product--image-thumb md-col-third" src="images/thumb-03.jpg" alt="thumb-03">
+                </div>
+            </div>
+            <div class="Single-product--text lg-col-half">
+                <h4>Single Product Name</h4>
+                <h5>$55.00</h5>
+                <p>Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit.</p>
+                <br>
+                <p class="u-color-blue"><strong>7 left on stock</strong></p>
+                <br>
+                <div class="md-col-full u-flex-left">
+                    <p><strong>Quantity:</strong></p>
+                    <input type="number" id="quantity" name="quantity" placeholder="1">
+                    <button class="button">ORDER NOW!</button>
+                </div>
+                <div class="u-spacer"></div>
+                <div class="u-flex-left">
+                    <div class="Single-product--category"><strong>Category:</strong></div>
+                    <div class="Single-product--tags">Pants, Women, Lifestyle</div>
+                </div>
+                <div class="u-spacer"></div>
+                <div class="Single-product--share u-flex-left">
+                    <div class="Single-product--shareText"><strong>Share:</strong></div>
+                    <div class="Single-product--shareItem">
+                        <ul class="u-flex-left u-center">
+                          <li><a href="#"><div class="fa-facebook"></div></a></li>
+                          <li><a href="#"><div class="fa-linkedin"></div></a></li>
+                          <li><a href="#"><div class="fa-twitter"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
+        </div>
 
-
-
-    
-    <section class="Subscribe">
-        <div class="Subscribe--container u-center">
-            <div class="title-decoration-center bg-white"></div>
-                <h3 class="color-white">Subscribe on PIXIE now!</h3>
-                <h4 class="Subscribe--content color-white">Integer vel turpis ultricies, lacinia id, lobortis augue. Vivamus porttitior dui id dictum effficitur. Phaselius vel interdum elit.</h4><br>
-                <div class="u-flex-space-between">
+    </div>
+    <section class="Features-items-main lg-col-full">
+        <div class="Featured-items-main--container con-1150px">
+            <div class="Featured-items--title">
+                <div class="title-decoration"></div>
+                <h3>You May Also Like</h3>
+            </div>
+            <div class="Featured-items--articles u-flex-space-between">
+                <div class="article--box lg-col-fourth">
+                    <img src="images/item-01.jpg" alt="item-01">
+                    <h4>Proin vel ligula</h4>
+                    <h5>$15.00</h5>
+                </div>
+                <div class="article--box lg-col-fourth">
+                    <img src="images/item-02.jpg" alt="item-02">
+                    <h4>Erat odio rhoncus</h4>
+                    <h5>$25.00</h5>
+                </div>
+                <div class="article--box lg-col-fourth">
+                    <img src="images/item-03.jpg" alt="item-03">
+                    <h4>Integer vel turpis</h4>
+                    <h5>$35.00</h5>
+                </div>
+                <div class="article--box lg-col-fourth">
+                    <img src="images/item-04.jpg" alt="item-04">
+                    <h4>Sed purus quam</h4>
+                    <h5>$45.00</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Subscribe lg-col-full u-bg-blue">
+        <div class=" con-725px u-center">
+            <div class="title-decoration-center u-bg-white"></div>
+                <h3 class="u-color-white">Subscribe on PIXIE now!</h3>
+                <h4 class="Subscribe--content u-color-white">Integer vel turpis ultricies, lacinia id, lobortis augue. Vivamus porttitior dui id dictum effficitur. Phaselius vel interdum elit.</h4><br>
+                <div class="lg-row">
                     <input type="text" id="email" name="email" placeholder="Your Email...">
                     <button class="button--white">SUBSCRIBE NOW!</button>
                 </div>
-            </div>
-        </div>   
+        </div>  
     </section>
-    <footer>
-        <div class="Footer--top">
+    <footer class="u-center">
+        <div class="Footer--top lg-col-full">
             <img class="Footer--logo" src="images/header-logo.png" alt="pixie logo">
         </div>
-        <div class="Footer--nav">
+        <div class="Footer--nav con-450px">
             <ul class="u-flex-space-between">
                 <li><a class="Footer--navItem" href="#">HOME</a></li>
                 <li><a class="Footer--navItem" href="#">HELP</a></li>
@@ -55,16 +128,15 @@
             </ul>
         </div>
         <div class="Social-media">
-            <div class="Social-media-links">
-              <ul>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <div class="con-450px u-center">
+              <ul class="u-flex">
+                <li><a href="#"><div class="fa-facebook"></div></a></li>
+                <li><a href="#"><div class="fa-twitter"></div></a></li>
+                <li><a href="#"><div class="fa-linkedin"></div></a></li>
+                <li><a href="#"><div class="fa-rss"></div></a></li>
               </ul>
             </div>
           </div>
     </footer>
-    
 </body>
 </html>

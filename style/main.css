@@ -1,7 +1,8 @@
 /* ----------breakpoint naming ----------
-mobile - max-width: 450px
-tablet - max-width: 900px
-desktop - default: >900px
+mobile sm - max-width: 450px
+tablet md - max-width: 900px
+desktop lg - max-width: 1800px
+desktop hg - default: >1800px
 ---------- END breakpoint naming ---------- */
 
 
@@ -21,6 +22,7 @@ body {
 
 html {
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.5rem;
     color: rgb(40, 40, 40);
 }
@@ -36,66 +38,115 @@ ul li {
 /* ---------- END global ---------- */
 
 
-/* ---------- section ---------- */
+/* ---------- columns ---------- */
 
-.Subscribe {
-    width: 100%;
-    height: fit-content;
-    padding: 75px;
-    background-color:#3a8bcd;
+.lg-no-row {
+    display: block;
 }
 
-/* ---------- END section ---------- */
+.lg-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lg-col-full {
+    width: 100%;
+}
+
+.lg-col-half {
+    width: calc(( 100% - 1rem) / 2);
+}
+
+.lg-col-third {
+    width: calc(( 100% - 4rem) / 3);
+}
+
+.lg-col-fourth {
+    width: calc(( 100% - 3rem) / 4);
+}
+
+.md-col-full {
+    width: 100%;
+}
+.md-col-third {
+    width: calc(( 100% - 4rem) / 3);
+}
+
+/* ---------- END columns ---------- */
 
 /* ---------- container ---------- */
 
-.container {
+.con-1150px {
     width: 1150px;
 }
 
-.Subscribe--container {
+.con-725px {
     width: 725px;
-    margin: auto auto;
+    margin: 0 auto;
 }
 
+.con-600px {
+    width: 600px;
+}
+
+.con-450px {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.Banner--container {
+    padding: 0;
+}
+
+.Featured-items-main--container,
+.Single-product--container,
+.About--container,
+.Contact--container {
+    padding: 3rem 0 1rem;
+    margin: 0 auto;
+}
 
 /* ---------- END container ---------- */
 
-/* ---------- header - footer ---------- */
 
-header, footer {
-    width: 100%;
-    text-align: center;
 
-}
+/* ---------- container media queries ---------- */
+
+
+/* ---------- ENDcontainer media queries ---------- */
+
+/* ---------- section header - subscribe - footer ---------- */
+
+
 .Header--top {
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
+    padding: 3rem 0;
 }
 
 .Footer--top {
-    padding: 2rem 0;
+    margin: 3rem 0 2rem;
 }
+
 
 .Header--logo, .Footer--logo {
     height: 25px;
 }
 
 .Header--nav {
-    width: 450px;
-    margin: 0 auto;
     padding: 1.5rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
-.Footer--nav {
-    width: 600px;
-    margin: 0 auto;
-    padding: 1.5rem 0;
+.Header--navItem {
+    margin: 0 2rem;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
 }
 
-.Header--navItem, .Footer--navItem {
-    margin: 0 1rem;
-    font-weight: bold;
+.Footer--navItem {
+    margin: 0 .5rem;
+    font-size: .85rem;
+    font-weight: 300;
     color: rgb(40, 40, 40);
 }
 
@@ -103,7 +154,51 @@ header, footer {
     color:#3a8bcd;
 }
 
-/* ---------- END header ---------- */
+.Subscribe {
+    height: fit-content;
+    padding: 75px 0;
+}
+
+.Subscribe--content {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.Social-media {
+    margin: 2.5rem auto 4rem;
+    
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-rss {
+    background-color: rgb(180, 180, 180);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    margin: 0 20px;
+}
+
+/* ---------- END section header - subscribe - footer ---------- */
+
+/* ---------- section featured items ---------- */
+
+.Featured-items--title {
+    margin: 0 0 3rem;
+}
+
+.article--box {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 2rem;
+}
+
+.article--box img {
+    width: 100%;
+}
+
+/* ---------- END section featured items ---------- */
 
 /* ---------- headers ---------- */
 
@@ -140,14 +235,6 @@ h5 {
     margin: 1rem auto;
 }
 
-.bg-white {
-    background-color: white;
-}
-
-.color-white {
-    color: white;
-}
-
 /* ---------- END headers ---------- */
 
 /* ---------- paragraph ---------- */
@@ -155,11 +242,6 @@ h5 {
 p {
     line-height: 1.5rem;
     margin: 1rem 0;
-}
-
-p .link {
-    color: #3a8bcd;
-    font-weight: bold;
 }
 
 /* ---------- END paragraph ---------- */
@@ -186,40 +268,81 @@ p .link {
     padding: 1rem;
     border-radius: 5px;
     margin: 0 1rem;
+    display: inline-block;
 }
 
 /* ---------- END button ---------- */
 
-/* ---------- form ---------- */
+/* ---------- subscribe form ---------- */
 
-input[type=text] {
+input#email[type=text] {
     width: 100%;
-    min-width: 60%;
+    min-width: 55%;
     background-color: #3a8bcd;
     border: 1px solid white;
     border-radius: 5px;
     font-size: 1.2rem;
     color: white;
     padding: 1rem;
-    margin: 0 1rem
+    margin: 0 1rem;
 }
 
-/* ---------- END form ---------- */
+input#email::placeholder {
+    color: white;
+}
+
+/* ---------- END subscribe form ---------- */
 
 /* ---------- utilities ---------- */
+
+
+.u-flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.u-flex {
+    display: flex;
+    justify-content: center;
+}
 
 .u-flex-space-between {
     display: flex;
     justify-content: space-between;
 }
 
-.u-block {
-    display: block;
-    text-align: center;
-}
-
 .u-center {
    text-align: center;
+   margin: 0 auto;
+}
+
+.u-bg-blue {
+    background-color: #3a8bcd;
+}
+
+.u-bg-white {
+    background-color: white;
+}
+
+.u-color-blue {
+    color:  #3a8bcd;
+}
+
+.u-color-gray {
+    color: rgb(40, 40, 40);
+}
+
+.u-color-white {
+    color: white;
+}
+
+.u-link {
+    font-weight: bold;
+}
+
+.u-spacer {
+    border: 1px solid #eee;
+    margin: 1rem auto;
 }
 
 /* ---------- END utilities ---------- */

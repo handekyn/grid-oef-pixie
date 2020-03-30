@@ -1,4 +1,4 @@
-/* ---------- banner ---------- */
+/* ---------- section banner ---------- */
 
 .Banner {
 	background-image: url(../images/banner-bg.jpg);
@@ -16,33 +16,17 @@
     background-color: rgba(250,250,250,0.9);
 }
 
-/* ---------- END banner ---------- */
-
+/* ---------- END section banner ---------- */
 
 
 /* ---------- container ---------- */
 
-.Banner--container, .Featured-items--container {
-    width: 1150px;
-    height: 100%;
+.Banner--container, .Featured-items-main--container {
     margin: 0 auto;
 }
-.Featured-items--container {
-    margin-bottom: 5rem;
+
+.Featured-items-main--container {
+    padding: 3rem 0;
 }
 
 /* ---------- END container ---------- */
-
-/* ---------- featured items section ---------- */
-
-.Featured-items--title {
-    margin: 5rem 0 3rem;
-}
-
-.article--box {
-    width: calc((100% / 3rem ) / 4);
-    border: 1px solid #eee;
-    padding: 20px;
-}
-
-/* ---------- END featured items section ---------- */

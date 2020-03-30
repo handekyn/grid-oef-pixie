@@ -1,0 +1,80 @@
+
+/* ---------- column ---------- */
+
+.Contact--form .lg-col-half {
+    width: calc(( 100% - 2rem) / 2);
+}
+
+/* ---------- ENDcolumn ---------- */
+
+/* ---------- section contact ---------- */
+
+.Contact--info {
+    margin-bottom: 6rem;
+}
+
+.Contact--form {
+    padding-left: 2rem;
+}
+
+.Contact--inTouchItem {
+    margin-left: 1rem;
+}
+
+.Contact--inTouchText {
+    line-height: 30px;
+}
+
+.Contact--inTouchItem .fa-facebook,
+.Contact--inTouchItem .fa-twitter,
+.Contact--inTouchItem .fa-linkedin {
+    background-color: rgb(180, 180, 180);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+/* ---------- END section contact ---------- */
+
+/* ---------- contact form ---------- */
+
+input#Contact--form-name[type=text] {
+    width: 100%;
+    border: 1px solid #eee;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input#Contact--form-email[type=text] {
+    width: 100%;
+    border: 1px solid #eee;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input#Contact--form-subject[type=text] {
+    width: 100%;
+    border: 1px solid #eee;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(40, 40, 40);
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ---------- END contact form ---------- */

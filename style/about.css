@@ -4,8 +4,14 @@
     margin-bottom: 6rem;
 }
 
+.About--image {
+    width: auto;
+    height: auto;
+}
+
 .About--text {
-    padding-left: 2rem;
+    padding-left: 3rem;
+    width: 100%;
 }
 
 .About--findItem {
@@ -37,3 +43,14 @@
 }
 
 /* ---------- END header ---------- */
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .About--image {
+        width: 100%;
+        height: auto;
+    }
+
+}

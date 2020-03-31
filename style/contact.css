@@ -13,6 +13,11 @@
     margin-bottom: 6rem;
 }
 
+.Contact--map {
+    width: 100%;
+    height: auto;
+}
+
 .Contact--form {
     padding-left: 2rem;
 }
@@ -78,3 +83,20 @@ textarea {
 }
 
 /* ---------- END contact form ---------- */
+
+
+@media screen and (max-width: 1150px) {
+
+    .Contact--map {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .Contact--inTouchText {
+        font-size: 0.85rem;
+    }
+}

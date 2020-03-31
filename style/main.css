@@ -68,6 +68,8 @@ ul li {
 .md-col-full {
     width: 100%;
 }
+
+
 .md-col-third {
     width: calc(( 100% - 4rem) / 3);
 }
@@ -108,15 +110,42 @@ ul li {
 
 /* ---------- END container ---------- */
 
+/* ---------- hamburger ---------- */
 
+.hamburger {
+    width: 40%;
+    height: 3px;
+    position: relative;
+    background-color: white;
+    border-radius: 2px;
+    margin: 18px auto;
+}
 
-/* ---------- container media queries ---------- */
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 7px;
+    background-color: white;
+}
 
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    position: absolute;
+    top: 7px;
+    background-color: white;
+}
 
-/* ---------- ENDcontainer media queries ---------- */
+/* ---------- END hamburger ---------- */
 
 /* ---------- section header - subscribe - footer ---------- */
-
 
 .Header--top {
     padding: 3rem 0;
@@ -125,7 +154,6 @@ ul li {
 .Footer--top {
     margin: 3rem 0 2rem;
 }
-
 
 .Header--logo, .Footer--logo {
     height: 25px;
@@ -141,6 +169,14 @@ ul li {
     margin: 0 2rem;
     font-weight: 600;
     color: rgb(40, 40, 40);
+}
+
+.Header--hamburger {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 100px;
+    display: none;
 }
 
 .Footer--navItem {
@@ -347,4 +383,65 @@ input#email::placeholder {
 
 /* ---------- END utilities ---------- */
 
+/* ---------- media queries ---------- */
 
+@media screen and (max-width: 1150px) {
+
+    .con-1150px {
+        width: 850px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .Header--top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+    }
+
+     .Header--nav {
+        display:none;
+    }
+
+    .Header--logo {
+        margin-left: 100px;
+    }
+
+    .Header--hamburger {
+        display:block;
+    }
+
+    .con-1150px {
+        width: 650px;
+    }
+
+    .con-725px {
+        width: 450px;
+    }
+
+    .md-col-half {
+        width: calc(( 100% - 1rem) / 2);
+    }
+    
+    .article-03, .article-04 {
+        display: none;
+    }
+
+    input#email[type=text] {
+        padding: .5rem;
+    }
+
+    .button--white {
+        height: fit-content;
+        background-color: white;
+        font-size: 1rem;
+        color: #3a8bcd;
+        padding: 1rem;
+        margin: 0 .5rem;
+    }
+}
+
+/* ---------- END media queries ---------- */

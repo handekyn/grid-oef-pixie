@@ -12,6 +12,8 @@
 }
 
 .Single-product--image-thumb {
+    width: 100%;
+    height: auto;
     margin: 1rem 1rem 0;
 }
 
@@ -72,3 +74,25 @@ input#quantity::placeholder {
 }
 
 /* ---------- END subscribe form ---------- */
+
+@media screen and (max-width: 1150px) {
+
+    .thumb-03 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .Featured-items--filterItem {
+        font-size: 0.9rem;
+        color: rgb(40, 40, 40);
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0 0 0 1.2rem;
+    }
+
+}
+
+/* ---------- END media queries ---------- */
